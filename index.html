@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karmakar Printers - Xerox & Printing</title>
+  <style>
+    :root {
+      --bg: #f6f4ee;
+      --card: #ffffff;
+      --accent: #3d5a80;
+      --accent-2: #98c1d9;
+      --text: #2a2a2a;
+      --muted: #5c5c5c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #3d5a80 0%, #98c1d9 100%);
+      color: white;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 4vw, 3.4rem);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      max-width: 760px;
+      margin: 0 auto;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 0.9rem;
+      flex-wrap: wrap;
+      margin-top: 1.75rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0.85rem 1.2rem;
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 999px;
+      transition: background 0.25s ease, transform 0.2s ease;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.18);
+      transform: translateY(-2px);
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 4rem;
+    }
+
+    .intro {
+      display: grid;
+      gap: 1.75rem;
+    }
+
+    .intro h2 {
+      font-size: clamp(1.8rem, 3.1vw, 2.4rem);
+      margin-bottom: 0.75rem;
+      color: var(--accent);
+    }
+
+    .intro p {
+      max-width: 820px;
+      color: var(--muted);
+      font-size: 1.03rem;
+    }
+
+    .section-grid {
+      display: grid;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 22px;
+      padding: 2rem;
+      border: 1px solid rgba(61,90,128,0.12);
+      box-shadow: 0 18px 32px rgba(45,52,65,0.08);
+    }
+
+    .card small {
+      display: inline-block;
+      margin-bottom: 0.9rem;
+      color: var(--accent-2);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .card h3 {
+      margin-bottom: 0.75rem;
+      color: var(--accent);
+    }
+
+    .card p {
+      color: var(--muted);
+    }
+
+    .card ul {
+      list-style: none;
+      margin-top: 1.25rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .card li {
+      padding: 1rem 1.1rem;
+      border-radius: 16px;
+      border: 1px solid rgba(61,90,128,0.08);
+      background: #f8f8f7;
+    }
+
+    .card li strong {
+      display: block;
+      margin-bottom: 0.3rem;
+      color: var(--text);
+    }
+
+    .cta {
+      display: inline-flex;
+      margin-top: 1.5rem;
+      padding: 0.95rem 1.3rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .cta:hover {
+      background: #315a84;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    @media (min-width: 768px) {
+      .intro {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+      }
+
+      .section-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Karmakar Printers</h1>
+    <p>Quick xerox, professional printing press work, and trusted tailoring all under one roof. We make each order easy, efficient, and high quality.</p>
+    <nav>
+      <a href="#xerox">Xerox Services</a>
+      <a href="#printing">Printing Press</a>
+      <a href="#tailoring">Tailoring</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <div>
+        <h2>Welcome to Your Local Print & Tailor Shop</h2>
+        <p>From fast document copies to custom printing jobs and garment alterations, our shop is built for both speed and craftsmanship. Choose the service you need, and we’ll handle the rest.</p>
+      </div>
+      <div>
+        <p>The navigation links above jump directly to each service section. Each area has clear benefits, key offerings, and a simple call to action for your next visit.</p>
+      </div>
+    </section>
+
+    <section class="section-grid">
+      <article id="xerox" class="card">
+        <small>Xerox</small>
+        <h3>Fast Copying & Scanning</h3>
+        <p>Perfect for students, business documents, and urgent print needs. We deliver clean, sharp copies with same-day service when you need it.</p>
+        <ul>
+          <li>
+            <strong>Black & White Copies</strong>
+            Affordable bulk copying for notes, worksheets, and reports.
+          </li>
+          <li>
+            <strong>Color Copies</strong>
+            Bright, accurate color prints for flyers and presentations.
+          </li>
+          <li>
+            <strong>Document Scans</strong>
+            Scan directly to PDF or image for fast digital delivery.
+          </li>
+          <li>
+            <strong>Binding & Finishing</strong>
+            Stapling, trimming, and finishing to make documents ready.
+          </li>
+        </ul>
+        <a class="cta" href="print.html">Ask About Xerox</a>
+      </article>
+
+      <article id="printing" class="card">
+        <small>Printing Press</small>
+        <h3>Professional Print Jobs</h3>
+        <p>Small-run printing, custom business materials, and promotional items made to look sharp. We handle color accuracy, paper quality, and fast production.</p>
+        <ul>
+          <li>
+            <strong>Business Cards</strong>
+            Clean, professional cards for your brand and contacts.
+          </li>
+          <li>
+            <strong>Flyers & Brochures</strong>
+            High-impact marketing pieces for events and local promotion.
+          </li>
+          <li>
+            <strong>Posters & Labels</strong>
+            Vibrant prints for signage, packaging, and displays.
+          </li>
+          <li>
+            <strong>Photo Prints</strong>
+            Crisp, vivid prints for photos and presentations.
+          </li>
+        </ul>
+        <a class="cta" href="print.html">Request Printing</a>
+      </article>
+    </section>
+
+    <section id="tailoring" class="card" style="margin-top: 2rem;">
+      <small>Tailoring</small>
+      <h3>Tailor Shop Services</h3>
+      <p>Trusted tailoring for alterations, repairs, and better-fit garments. We provide precise adjustments so every piece fits comfortably and looks polished.</p>
+      <ul>
+        <li>
+          <strong>Alterations</strong>
+          Hemming, resizing, and shape adjustments for dresses, pants, and jackets.
+        </li>
+        <li>
+          <strong>Repairs</strong>
+          Zipper replacement, patching, button repair, and seam fixes.
+        </li>
+        <li>
+          <strong>Custom Fit</strong>
+          Personalized fittings for suits, uniforms, and special outfits.
+        </li>
+      </ul>
+      <a class="cta" href="print.html">Visit the Tailor</a>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Drop by our shop for xerox, printing, and tailoring services. We’re ready to help with urgent orders, custom prints, and precision garment work.</p>
+  </footer>
+</body>
+</html>
